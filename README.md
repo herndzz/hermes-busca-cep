@@ -1,8 +1,8 @@
 <img src="img/logo-hermes-busca-cep.png" alt="logo-hermes" height="128" width="128">
-<h1 style="margin:0">Hermes - Buscador de CEP</h1>
-<h3 style="margin:.5em 0">Curso Téc. Informática, 3º Período</h3> 
-<h4 style="margin:0 0 1em 0">Prof.: Felipe Daher - 
-Projeto Orientado (23/10/2023)</h4>
+
+# Hermes - Buscador de CEP
+### Curso Téc. Informática, 3º Período
+#### Prof.: Felipe Daher - Projeto Orientado (23/10/2023)
 
 <p>Quem nunca pediu algo pela internet e teve dificuldade em preencher o endereço por não saber o CEP?</p> 
 
@@ -15,7 +15,7 @@ Projeto Orientado (23/10/2023)</h4>
 <code>style.css</code><br>
 <code>index.js</code>
 
-* Para usar é só baixar o zip ou clonar o repositório e abrir no navegador.
+Para usar é só baixar o zip ou clonar o repositório e abrir no navegador.
 
 Habilidades desenvolvidas no projeto:
 * Trabalhando com os conceitos de API, requisição e resposta;
