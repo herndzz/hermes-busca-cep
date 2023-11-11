@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav {
     background-color: #FFFAA0;
-    padding: .5em 1em;
+    padding: 0 1em;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    align-items: center;
 }
 
 .logo-name {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .main {
@@ -28,12 +34,46 @@ body {
     display: flex;
     flex-direction: column;
     left: 0;
-    gap: 10px;
     background-color: #FFFAA0;
     padding: 1em;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-#resultado {
-    padding: 2em 0;
+.card-title {
+    border-bottom: solid 1px #333;
+    margin-bottom: .2em;
 }
+
+label {
+    font-size: .8rem;
+}
+
+input {
+    height: 2.5rem;
+}
+
+input, select {
+    margin-bottom: .5em;
+    margin-top: .2em;
+    padding-left: .8em;
+}
+
+button {
+    margin-top: .2em;
+}
+
+#resultado {
+    padding: 1em;
+}
+
+.res-container {
+    background-color: #3333;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 2%;
+}
+
+footer {
+    background-color: #333;
+}
+

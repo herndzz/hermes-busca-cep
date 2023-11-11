@@ -3,39 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Logo -->
-  <link rel="shortcut icon" href="img/hermes-logo.jpg" type="image/x-icon">
-  <!-- Abaixo o link da CDN do Bootstrap -->
+  <link rel="shortcut icon" href="img/logo-hermes-busca-cep.png" type="image/x-icon"> <!-- Logo -->
+  
+  <!-- CDN do Bootstrap - Estilização -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!-- Link da página de estilo -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
 
-  <title>Hermes - Buscador de CEP</title>
+  <!-- Scripts -->
   <script src="index.js" defer></script>
+  <script src="js/limpar.js" defer></script>
+
+  <title>Hermes - Buscador de CEP</title>
 </head>
 <body>
   <div class="nav">
+    <img src="img/logo-hermes-busca-cep.png" alt="logo" width="64px" height="64">
     <span class="logo-name">Hermes</span>
   </div>
   <div class="main">
     <div class="form-wrapper">
-      <h1>Buscador de CEP</h1>
+      <h1 class="card-title">Buscador de CEP</h1>
       <!-- Input para a CEP-->
       <label for="cep">CEP:</label>
-      <input type="text" id="cep" placeholder="Ex.: 38025-510">
+      <input type="text" id="cep" placeholder="38025-510">
       <!-- Input para a UF-->
       <label for="uf">Unidade Federativa:</label>
-      <input type="text" id="uf" placeholder="Ex.: Minas Gerais">
+      <select id="uf" name="uf" required>
+        <option value="AC">Acre (AC)</option>
+        <option value="AL">Alagoas (AL)</option>
+        <option value="AP">Amapá (AP)</option>
+        <option value="AM">Amazonas (AM)</option>
+        <option value="BA">Bahia (BA)</option>
+        <option value="CE">Ceará (CE)</option>
+        <option value="DF">Distrito Federal (DF)</option>
+        <option value="ES">Espírito Santo (ES)</option>
+        <option value="GO">Goiás (GO)</option>
+        <option value="MA">Maranhão (MA)</option>
+        <option value="MT">Mato Grosso (MT)</option>
+        <option value="MS">Mato Grosso do Sul (MS)</option>
+        <option value="MG" selected >Minas Gerais (MG)</option>
+        <option value="PA">Pará (PA)</option>  
+        <option value="PB">Paraíba (PB)</option> 
+        <option value="PR">Paraná (PR)</option> 
+        <option value="PE">Pernambuco (PE)</option>
+        <option value="PI">Piauí (PI)</option>    
+        <option value="RJ">Rio de Janeiro (RJ)</option> 
+        <option value="RN">Rio Grande do Norte (RN)</option>
+        <option value="RS">Rio Grande do Sul (RS)</option>
+        <option value="RO">Rondônia (RO)</option>
+        <option value="RR">Roraima (RR)</option>
+        <option value="SC">Santa Catarina (SC)</option>
+        <option value="SP">São Paulo (SP)</option>
+        <option value="SC">Sergipe (SE)</option>
+        <option value="TO">Tocantins (TO)</option>
+      </select>
       <!-- Input para a cidade-->
       <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" placeholder="Ex.: Uberaba">
+      <input type="text" id="cidade" placeholder="Uberaba" maxlength="40">
       <!-- Input para o logradoura/rua-->
-      <label for="logradouro">Logradouro:</label>
-      <input type="text" id="logradouro" placeholder="Ex.: R. Dr. Ludovice">
-      <button onclick="buscarCEP()">Buscar</button>
+      <label for="logradouro">Rua/Logradouro:</label>
+      <input type="text" id="logradouro" placeholder="Rua Doutor Ludovice" maxlength="40">
+      <div>
+        <button onclick="buscarCEP()">Buscar</button>
+        <button onclick="limparInput()">Limpar</button>
+      </div>
     </div>
     <div id="resultado">
-      <div id="loading" style="display:none;">Aguarde...</div>
       <!-- Os resultados da busca serão exibidos aqui -->
     </div>
   </div>
