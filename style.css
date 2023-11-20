@@ -1,6 +1,5 @@
-@import url('reset.css');
+@import url('css/reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 
 :root {
     --primary-color: #1E1930;
@@ -10,11 +9,11 @@
 }
 
 /* Início da Estilização */
-
 body {
     box-sizing: border-box;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--fourth-color);
+    overflow-x: hidden;
 }
 
 .nav {
@@ -43,9 +42,8 @@ body {
 }
 
 /* Formulário de Pesquisa*/
-
 .form-container {
-    height: 87vh;
+    height: 82vh;
     width: 100vw;
     background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
@@ -61,8 +59,10 @@ body {
     background-color: var(--third-color);
     padding: 1em;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 80%;
     width: 40%;
     min-width: 300px;
+    border-radius: 10px;
 }
 
 .card-title {
@@ -81,8 +81,7 @@ input {
     height: 2.5rem;
 }
 
-input,
-select {
+input, select {
     margin-bottom: .5em;
     margin-top: .2em;
     padding-left: .8em;
@@ -97,6 +96,7 @@ select {
 }
 
 button {
+    margin-right: .2em;
     margin-top: .2em;
     height: 2.5em;
     width: 5.5em;
@@ -108,14 +108,13 @@ button {
 }
 
 button:hover {
-    background-color: var(--fourth-color-color);
+    background-color: var(--fourth-color);
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     transition: .4s;
 }
 
 /* Resposta */
-
 #resultado {
     display: flex;
     align-items: center;
@@ -123,6 +122,7 @@ button:hover {
     align-items: flex-start;
     justify-content: center;
     color: black;
+    min-height: 10vh;
 }
 
 .res-container {
@@ -134,6 +134,32 @@ button:hover {
     max-width: 350px;
 }
 
-footer {
-    background-color: #333;
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--fourth-color);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    flex-direction: column;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: .2s;
+    margin: .5em;
+}
+
+.footer a:hover {
+    color: var(--third-color);
+    transition: .2s;
 }
