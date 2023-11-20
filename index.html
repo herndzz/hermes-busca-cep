@@ -22,56 +22,58 @@
     <span class="logo-name">Hermes</span>
   </div>
   <div class="main">
-    <div class="form-wrapper">
-      <h1 class="card-title">Buscador de CEP</h1>
-      <!-- Input para a CEP-->
-      <label for="cep">CEP:</label>
-      <input type="text" id="cep" placeholder="38025-510">
-      <!-- Input para a UF-->
-      <label for="uf">Unidade Federativa:</label>
-      <select id="uf" name="uf" required>
-        <option value="AC">Acre (AC)</option>
-        <option value="AL">Alagoas (AL)</option>
-        <option value="AP">Amapá (AP)</option>
-        <option value="AM">Amazonas (AM)</option>
-        <option value="BA">Bahia (BA)</option>
-        <option value="CE">Ceará (CE)</option>
-        <option value="DF">Distrito Federal (DF)</option>
-        <option value="ES">Espírito Santo (ES)</option>
-        <option value="GO">Goiás (GO)</option>
-        <option value="MA">Maranhão (MA)</option>
-        <option value="MT">Mato Grosso (MT)</option>
-        <option value="MS">Mato Grosso do Sul (MS)</option>
-        <option value="MG" selected >Minas Gerais (MG)</option>
-        <option value="PA">Pará (PA)</option>  
-        <option value="PB">Paraíba (PB)</option> 
-        <option value="PR">Paraná (PR)</option> 
-        <option value="PE">Pernambuco (PE)</option>
-        <option value="PI">Piauí (PI)</option>    
-        <option value="RJ">Rio de Janeiro (RJ)</option> 
-        <option value="RN">Rio Grande do Norte (RN)</option>
-        <option value="RS">Rio Grande do Sul (RS)</option>
-        <option value="RO">Rondônia (RO)</option>
-        <option value="RR">Roraima (RR)</option>
-        <option value="SC">Santa Catarina (SC)</option>
-        <option value="SP">São Paulo (SP)</option>
-        <option value="SC">Sergipe (SE)</option>
-        <option value="TO">Tocantins (TO)</option>
-      </select>
-      <!-- Input para a cidade-->
-      <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" placeholder="Uberaba" maxlength="40">
-      <!-- Input para o logradoura/rua-->
-      <label for="logradouro">Rua/Logradouro:</label>
-      <input type="text" id="logradouro" placeholder="Rua Doutor Ludovice" maxlength="40">
-      <div>
-        <button onclick="buscarCEP()">Buscar</button>
-        <button onclick="limparInput()">Limpar</button>
+    <div class="form-container">
+      <div class="form-wrapper">
+        <h1 class="card-title">Buscador de CEP</h1>
+        <!-- Input para a CEP-->
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" placeholder="38025-510">
+        <!-- Input para a UF-->
+        <label for="uf">Unidade Federativa:</label>
+        <select id="uf" name="uf" required>
+          <option value="AC">Acre (AC)</option>
+          <option value="AL">Alagoas (AL)</option>
+          <option value="AP">Amapá (AP)</option>
+          <option value="AM">Amazonas (AM)</option>
+          <option value="BA">Bahia (BA)</option>
+          <option value="CE">Ceará (CE)</option>
+          <option value="DF">Distrito Federal (DF)</option>
+          <option value="ES">Espírito Santo (ES)</option>
+          <option value="GO">Goiás (GO)</option>
+          <option value="MA">Maranhão (MA)</option>
+          <option value="MT">Mato Grosso (MT)</option>
+          <option value="MS">Mato Grosso do Sul (MS)</option>
+          <option value="MG" selected >Minas Gerais (MG)</option>
+          <option value="PA">Pará (PA)</option>  
+          <option value="PB">Paraíba (PB)</option> 
+          <option value="PR">Paraná (PR)</option> 
+          <option value="PE">Pernambuco (PE)</option>
+          <option value="PI">Piauí (PI)</option>    
+          <option value="RJ">Rio de Janeiro (RJ)</option> 
+          <option value="RN">Rio Grande do Norte (RN)</option>
+          <option value="RS">Rio Grande do Sul (RS)</option>
+          <option value="RO">Rondônia (RO)</option>
+          <option value="RR">Roraima (RR)</option>
+          <option value="SC">Santa Catarina (SC)</option>
+          <option value="SP">São Paulo (SP)</option>
+          <option value="SC">Sergipe (SE)</option>
+          <option value="TO">Tocantins (TO)</option>
+        </select>
+        <!-- Input para a cidade-->
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" placeholder="Uberaba" maxlength="40">
+        <!-- Input para o logradoura/rua-->
+        <label for="logradouro">Rua/Logradouro:</label>
+        <input type="text" id="logradouro" placeholder="Rua Doutor Ludovice" maxlength="40">
+        <div>
+          <button onclick="buscarCEP()">Buscar</button>
+          <button onclick="limparInput()">Limpar</button>
+        </div>
       </div>
     </div>
-    <div id="resultado">
-      <!-- Os resultados da busca serão exibidos aqui -->
-    </div>
+  </div>
+  <div id="resultado">
+    <!-- Os resultados da busca serão exibidos aqui -->
   </div>
 </body>
 </html>

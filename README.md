@@ -23,7 +23,4 @@ Habilidades desenvolvidas no projeto:
 * Estilização de elementos com CSS e Bootstrap;
 * HTML;
 
-<p>Aparência do site:</p>
-<img src="img/website-appearance.png" alt="logo-hermes" height="300" width="450">
-
-Info sobre a API: https://viacep.com.br/
+API: https://viacep.com.br/
