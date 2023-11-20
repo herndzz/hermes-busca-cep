@@ -122,7 +122,7 @@ button:hover {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    color: var(--fourth-color);
+    color: black;
 }
 
 .res-container {
