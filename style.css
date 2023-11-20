@@ -63,6 +63,7 @@ body {
     width: 40%;
     min-width: 300px;
     border-radius: 10px;
+    max-height: 500px;
 }
 
 .card-title {
@@ -154,12 +155,12 @@ button:hover {
 .footer a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: var(--fourth-color);
     transition: .2s;
     margin: .5em;
 }
 
 .footer a:hover {
-    color: var(--third-color);
+    color: white;
     transition: .2s;
 }
